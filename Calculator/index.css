@@ -1,19 +1,18 @@
-/* *{ box-sizing: border-box; padding: 0; margin: 0; } */
+*{ box-sizing: border-box; padding: 0; margin: 0; }
 
 body {
     text-align: center;
     background: rgb(193,0,138);
     background: radial-gradient(circle, 
     rgba(193,0,138,1) 40%,rgba(4,200,232,1) 70%, rgba(55,136,232,1) 90%);
-    min-height: 100vh;
+    height: inherit;
 }
 .container{
     border: solid;;
     display:flex;
     align-items: center;
     min-height: 100vh;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .calculator{
@@ -24,8 +23,8 @@ body {
     border: solid; 
     background-color: aquamarine;
     border:solid;  
-    width: 200px;
-    height: 200px;
+    min-height: 25vh;
+    min-width: 300px;
 }
 
 .screen{
@@ -35,8 +34,8 @@ body {
     padding: 5px;
     justify-content: right;
     align-items: end;
-    width: 110px;
-    height: 150px;
+    width: 100%;
+    min-height: 70px;
 }
 
 .calc-button-row{
@@ -44,16 +43,31 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 30px;
-    
+    height: 50px;
+    justify-content:space-around;
 }
 
 .calc-buttons{
-    font-size: 20px;
-    justify-content: space-between;
-    margin: 0;
-    border: 1px solid;
+    font-size: 40px;
+    width: 100%;
+}
+
+.calc-buttons :hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+.calc-button{
+    width: 25%;
     cursor: pointer;
-    justify-content: space-between;
+}
+
+.calc-button-c{
+    width: 50%;
+    cursor: pointer;
+}
+
+.calc-button-0{
+    width: 50%;
+    cursor: pointer;
 }
